@@ -886,3 +886,23 @@ footer {
         grid-template-columns: 65px 1fr 20px;
     }
 }
+@media (max-width: 850px) {
+
+    .nav-menu.open {
+        display: flex;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        padding: 12px 5%;
+        background: #ffffff;
+        border-bottom: 1px solid #edf0f2;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-menu.open a {
+        padding: 13px 0;
+        border-bottom: 1px solid #f0f2f4;
+    }
+}

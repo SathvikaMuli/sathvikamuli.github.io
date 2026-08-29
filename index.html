@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Personal portfolio website of Your Name">
-    <meta name="author" content="Your Name">
+    <meta name="description" content="Portfolio of Sathvika Muli, a second-year student at Sai University.">
+    <meta name="author" content="Sathvika Muli">
 
-    <title>Your Name | Portfolio</title>
+    <title>Sathvika Muli — Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="container nav-container">
+    <!-- NAVBAR -->
 
-                <a href="#home" class="logo">Your Name</a>
+    <header class="navbar">
+        <div class="nav-inner">
 
-                <div class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#education">Education</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
+            <a href="#home" class="brand">SM.</a>
 
-                <button class="menu-toggle" aria-label="Open menu">
-                    ☰
-                </button>
+            <nav class="nav-menu">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-            </div>
-        </nav>
+            <a href="resume.pdf" target="_blank" class="nav-resume">
+                Resume
+            </a>
+
+            <button class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
     </header>
 
 
-    <!-- Home -->
     <main>
+
+        <!-- HERO -->
 
         <section id="home" class="hero">
 
-            <div class="container hero-container">
+            <div class="hero-inner">
 
-                <div class="hero-text">
+                <div class="hero-content">
 
-                    <p class="eyebrow">HELLO, I'M</p>
+                    <div class="availability">
+                        <span></span>
+                        Student Portfolio
+                    </div>
 
-                    <h1>Your Name</h1>
+                    <h1>
+                        Hi, I'm
+                        <strong>Sathvika<br>Muli.</strong>
+                    </h1>
 
-                    <h2>Computer Science Student</h2>
-
-                    <p class="hero-description">
-                        I am a student passionate about technology,
-                        programming and building meaningful projects.
-                        I enjoy learning new skills and turning ideas
-                        into practical solutions.
+                    <p class="hero-text">
+                        A second-year student at Sai University,
+                        interested in technology, creativity and
+                        building things that make an impact.
                     </p>
 
-                    <div class="hero-buttons">
+                    <div class="hero-actions">
 
-                        <a href="#projects" class="button primary">
-                            View My Work
+                        <a href="#projects" class="primary-btn">
+                            Explore my work
+                            <span>↗</span>
                         </a>
 
-                        <a href="resume.pdf" target="_blank" class="button">
+                        <a href="resume.pdf" target="_blank" class="text-btn">
                             View Resume
                         </a>
 
@@ -76,13 +82,28 @@
 
                 </div>
 
-                <div class="hero-card">
 
-                    <div class="profile-circle">
-                        YN
+                <div class="hero-visual">
+
+                    <div class="visual-card">
+
+                        <div class="initials">
+                            SM
+                        </div>
+
+                        <div class="visual-info">
+                            <span>Currently</span>
+                            <strong>2nd Year Student</strong>
+                            <small>Sai University</small>
+                        </div>
+
                     </div>
 
-                    <p>Student • Developer • Learner</p>
+                    <div class="floating-note">
+                        <span>01</span>
+                        Learning<br>
+                        & building
+                    </div>
 
                 </div>
 
@@ -91,61 +112,38 @@
         </section>
 
 
-        <!-- About -->
+        <!-- ABOUT -->
+
         <section id="about" class="section">
 
-            <div class="container">
+            <div class="section-inner">
 
-                <div class="section-title">
+                <div class="section-label">
                     <span>01</span>
-                    <div>
-                        <p>ABOUT ME</p>
-                        <h2>Who I Am</h2>
-                    </div>
+                    ABOUT
                 </div>
 
-                <div class="about-grid">
+                <div class="about-layout">
 
-                    <div class="about-text">
+                    <h2>
+                        A little bit<br>
+                        <em>about me.</em>
+                    </h2>
+
+                    <div class="about-copy">
 
                         <p>
-                            I am currently pursuing my degree in
-                            <strong>Your Course</strong> at
-                            <strong>Your College Name</strong>.
+                            I'm Sathvika Muli, currently in my second year
+                            at Sai University. I'm exploring different areas
+                            of technology while developing my skills through
+                            coursework and personal projects.
                         </p>
 
                         <p>
-                            I have a strong interest in programming,
-                            web development and cybersecurity. I enjoy
-                            exploring new technologies and developing
-                            projects that help me improve my technical
-                            and problem-solving skills.
+                            I enjoy learning new concepts, experimenting
+                            with ideas and turning what I learn into
+                            practical work.
                         </p>
-
-                        <p>
-                            My goal is to continuously learn, gain
-                            practical experience and build a strong
-                            career in the technology field.
-                        </p>
-
-                    </div>
-
-                    <div class="about-box">
-
-                        <div>
-                            <span>Currently</span>
-                            <strong>Student</strong>
-                        </div>
-
-                        <div>
-                            <span>Focus</span>
-                            <strong>Technology</strong>
-                        </div>
-
-                        <div>
-                            <span>Location</span>
-                            <strong>India</strong>
-                        </div>
 
                     </div>
 
@@ -156,47 +154,40 @@
         </section>
 
 
-        <!-- Education -->
-        <section id="education" class="section soft-section">
+        <!-- EDUCATION -->
 
-            <div class="container">
+        <section id="education" class="section tinted">
 
-                <div class="section-title">
+            <div class="section-inner">
+
+                <div class="section-label">
                     <span>02</span>
-                    <div>
-                        <p>EDUCATION</p>
-                        <h2>My Education</h2>
-                    </div>
+                    EDUCATION
                 </div>
 
-                <div class="timeline">
+                <div class="education-card">
 
-                    <div class="education-card">
+                    <div class="education-year">
+                        2025 — Present
+                    </div>
 
-                        <div class="year">
-                            2025 — Present
-                        </div>
+                    <div class="education-main">
 
-                        <div>
-                            <h3>Your Degree / Course</h3>
-                            <p>Your College Name</p>
-                            <small>City, India</small>
+                        <h2>Sai University</h2>
+
+                        <p>
+                            Second Year Student
+                        </p>
+
+                        <div class="education-tags">
+                            <span>University</span>
+                            <span>Current</span>
                         </div>
 
                     </div>
 
-                    <div class="education-card">
-
-                        <div class="year">
-                            2023 — 2025
-                        </div>
-
-                        <div>
-                            <h3>Higher Secondary Education</h3>
-                            <p>Your School Name</p>
-                            <small>City, India</small>
-                        </div>
-
+                    <div class="education-arrow">
+                        ↗
                     </div>
 
                 </div>
@@ -206,51 +197,56 @@
         </section>
 
 
-        <!-- Skills -->
+        <!-- SKILLS -->
+
         <section id="skills" class="section">
 
-            <div class="container">
+            <div class="section-inner">
 
-                <div class="section-title">
+                <div class="section-label">
                     <span>03</span>
-                    <div>
-                        <p>SKILLS</p>
-                        <h2>What I Work With</h2>
-                    </div>
+                    SKILLS
                 </div>
+
+                <div class="skills-header">
+
+                    <h2>
+                        Things I'm<br>
+                        <em>learning.</em>
+                    </h2>
+
+                    <p>
+                        This section can be updated as you develop
+                        new technical and creative skills.
+                    </p>
+
+                </div>
+
 
                 <div class="skills-grid">
 
-                    <div class="skill-card">
-                        <div class="skill-icon">01</div>
+                    <div class="skill-item">
+                        <span>01</span>
                         <h3>Programming</h3>
-                        <p>
-                            Python, C, Java
-                        </p>
+                        <p>Add your languages here</p>
                     </div>
 
-                    <div class="skill-card">
-                        <div class="skill-icon">02</div>
+                    <div class="skill-item">
+                        <span>02</span>
                         <h3>Web Development</h3>
-                        <p>
-                            HTML, CSS, JavaScript
-                        </p>
+                        <p>Add your technologies here</p>
                     </div>
 
-                    <div class="skill-card">
-                        <div class="skill-icon">03</div>
+                    <div class="skill-item">
+                        <span>03</span>
                         <h3>Tools</h3>
-                        <p>
-                            Git, GitHub, VS Code
-                        </p>
+                        <p>Add your tools here</p>
                     </div>
 
-                    <div class="skill-card">
-                        <div class="skill-icon">04</div>
+                    <div class="skill-item">
+                        <span>04</span>
                         <h3>Other Skills</h3>
-                        <p>
-                            Problem Solving, Communication
-                        </p>
+                        <p>Add your skills here</p>
                     </div>
 
                 </div>
@@ -260,44 +256,64 @@
         </section>
 
 
-        <!-- Projects -->
-        <section id="projects" class="section soft-section">
+        <!-- PROJECTS -->
 
-            <div class="container">
+        <section id="projects" class="section tinted">
 
-                <div class="section-title">
+            <div class="section-inner">
+
+                <div class="section-label">
                     <span>04</span>
-                    <div>
-                        <p>PROJECTS</p>
-                        <h2>Things I've Built</h2>
-                    </div>
+                    PROJECTS
                 </div>
+
+                <div class="projects-heading">
+
+                    <h2>
+                        Selected<br>
+                        <em>work.</em>
+                    </h2>
+
+                    <p>
+                        A few projects that showcase what
+                        I'm learning and building.
+                    </p>
+
+                </div>
+
 
                 <div class="projects-grid">
 
                     <article class="project-card">
 
-                        <div class="project-top">
-                            <span>01</span>
-                            <span>WEB</span>
+                        <div class="project-number">
+                            01
                         </div>
 
-                        <h3>Personal Portfolio</h3>
+                        <div class="project-content">
 
-                        <p>
-                            A clean personal portfolio website created
-                            using HTML, CSS and JavaScript to showcase
-                            my skills, education and projects.
-                        </p>
+                            <p class="project-type">
+                                PORTFOLIO
+                            </p>
 
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                            <h3>Personal Portfolio</h3>
+
+                            <p>
+                                A personal website created to showcase
+                                my education, skills, projects and
+                                journey as a student.
+                            </p>
+
+                            <div class="project-tools">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
                         </div>
 
-                        <a href="#" class="project-link">
-                            View Project →
+                        <a href="#" class="project-arrow">
+                            ↗
                         </a>
 
                     </article>
@@ -305,27 +321,32 @@
 
                     <article class="project-card">
 
-                        <div class="project-top">
-                            <span>02</span>
-                            <span>WEB</span>
+                        <div class="project-number">
+                            02
                         </div>
 
-                        <h3>TimelessBHARAT</h3>
+                        <div class="project-content">
 
-                        <p>
-                            A travel and heritage website showcasing
-                            important cultural and historical places
-                            across Indian states.
-                        </p>
+                            <p class="project-type">
+                                PROJECT
+                            </p>
 
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                            <h3>Project Two</h3>
+
+                            <p>
+                                Add a short description of another
+                                academic or personal project here.
+                            </p>
+
+                            <div class="project-tools">
+                                <span>Technology</span>
+                                <span>Project</span>
+                            </div>
+
                         </div>
 
-                        <a href="#" class="project-link">
-                            View Project →
+                        <a href="#" class="project-arrow">
+                            ↗
                         </a>
 
                     </article>
@@ -333,26 +354,32 @@
 
                     <article class="project-card">
 
-                        <div class="project-top">
-                            <span>03</span>
-                            <span>PROJECT</span>
+                        <div class="project-number">
+                            03
                         </div>
 
-                        <h3>Future Project</h3>
+                        <div class="project-content">
 
-                        <p>
-                            Add another academic or personal project
-                            here with a short description of what
-                            you built.
-                        </p>
+                            <p class="project-type">
+                                PROJECT
+                            </p>
 
-                        <div class="project-tech">
-                            <span>Technology</span>
-                            <span>Project</span>
+                            <h3>Project Three</h3>
+
+                            <p>
+                                Add another project here when you
+                                are ready to showcase your work.
+                            </p>
+
+                            <div class="project-tools">
+                                <span>Technology</span>
+                                <span>Project</span>
+                            </div>
+
                         </div>
 
-                        <a href="#" class="project-link">
-                            View Project →
+                        <a href="#" class="project-arrow">
+                            ↗
                         </a>
 
                     </article>
@@ -364,70 +391,89 @@
         </section>
 
 
-        <!-- Resume -->
+        <!-- RESUME -->
+
         <section class="resume-section">
 
-            <div class="container resume-container">
+            <div class="section-inner">
 
-                <div>
-                    <p class="resume-label">MY RESUME</p>
-                    <h2>Interested in knowing more?</h2>
-                    <p>
-                        Take a look at my resume for my complete
-                        academic and professional details.
-                    </p>
+                <div class="resume-box">
+
+                    <div>
+
+                        <span class="resume-label">
+                            RESUME
+                        </span>
+
+                        <h2>
+                            Want to know more?
+                        </h2>
+
+                        <p>
+                            View my resume for more information
+                            about my academic journey and experience.
+                        </p>
+
+                    </div>
+
+                    <a href="resume.pdf" target="_blank" class="resume-button">
+                        Open Resume
+                        <span>↗</span>
+                    </a>
+
                 </div>
-
-                <a href="resume.pdf" target="_blank" class="button primary">
-                    View Resume →
-                </a>
 
             </div>
 
         </section>
 
 
-        <!-- Contact -->
-        <section id="contact" class="section">
+        <!-- CONTACT -->
 
-            <div class="container">
+        <section id="contact" class="section contact-section">
 
-                <div class="section-title">
+            <div class="section-inner">
+
+                <div class="section-label">
                     <span>05</span>
-                    <div>
-                        <p>CONTACT</p>
-                        <h2>Let's Connect</h2>
-                    </div>
+                    CONTACT
                 </div>
 
-                <div class="contact-grid">
+                <div class="contact-layout">
 
-                    <div class="contact-text">
+                    <div>
 
-                        <h3>Have a question or want to connect?</h3>
+                        <h2>
+                            Let's<br>
+                            <em>connect.</em>
+                        </h2>
 
-                        <p>
-                            Feel free to reach out through any of
-                            the platforms below.
+                        <p class="contact-intro">
+                            Have a question, opportunity or just want
+                            to say hello? Feel free to reach out.
                         </p>
 
                     </div>
 
-                    <div class="contact-links">
 
-                        <a href="mailto:yourmail@example.com">
+                    <div class="contact-details">
+
+                        <a href="mailto:sathvikamuli25@gmail.com">
                             <span>Email</span>
-                            yourmail@example.com
+                            sathvikamuli25@gmail.com
+                            <b>↗</b>
                         </a>
 
                         <a href="#" target="_blank">
                             <span>GitHub</span>
-                            github.com/yourusername
+                            Add your GitHub
+                            <b>↗</b>
                         </a>
 
                         <a href="#" target="_blank">
                             <span>LinkedIn</span>
-                            linkedin.com/in/yourusername
+                            Add your LinkedIn
+                            <b>↗</b>
                         </a>
 
                     </div>
@@ -441,14 +487,15 @@
     </main>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
+
     <footer>
 
-        <div class="container footer-container">
+        <div class="footer-inner">
 
-            <p>© 2026 Your Name</p>
+            <span>© 2026 Sathvika Muli</span>
 
-            <p>Designed & Built with HTML, CSS & JavaScript</p>
+            <span>Built with HTML, CSS & JavaScript</span>
 
         </div>
 

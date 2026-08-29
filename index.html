@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Personal portfolio website of Your Name">
+    <meta name="author" content="Your Name">
 
     <title>Your Name | Portfolio</title>
 
@@ -16,292 +16,439 @@
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <div class="container nav-container">
+    <header>
+        <nav>
+            <div class="container nav-container">
 
-            <div class="logo">Your Name</div>
+                <a href="#home" class="logo">Your Name</a>
 
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <button class="menu-toggle" aria-label="Open menu">
+                    ☰
+                </button>
+
             </div>
-
-            <button class="menu-toggle">☰</button>
-
-        </div>
-    </nav>
+        </nav>
+    </header>
 
 
     <!-- Home -->
-    <section id="home" class="hero">
+    <main>
 
-        <div class="container hero-content">
+        <section id="home" class="hero">
 
-            <p class="hello">Hello, I'm</p>
+            <div class="container hero-container">
 
-            <h1>Your Name</h1>
+                <div class="hero-text">
 
-            <p class="role">
-                Student | Developer | Technology Enthusiast
-            </p>
+                    <p class="eyebrow">HELLO, I'M</p>
 
-            <p class="hero-description">
-                I am a student interested in technology, programming
-                and building useful projects.
-            </p>
+                    <h1>Your Name</h1>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="button primary">
-                    View My Work
+                    <h2>Computer Science Student</h2>
+
+                    <p class="hero-description">
+                        I am a student passionate about technology,
+                        programming and building meaningful projects.
+                        I enjoy learning new skills and turning ideas
+                        into practical solutions.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="button primary">
+                            View My Work
+                        </a>
+
+                        <a href="resume.pdf" target="_blank" class="button">
+                            View Resume
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="profile-circle">
+                        YN
+                    </div>
+
+                    <p>Student • Developer • Learner</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>01</span>
+                    <div>
+                        <p>ABOUT ME</p>
+                        <h2>Who I Am</h2>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p>
+                            I am currently pursuing my degree in
+                            <strong>Your Course</strong> at
+                            <strong>Your College Name</strong>.
+                        </p>
+
+                        <p>
+                            I have a strong interest in programming,
+                            web development and cybersecurity. I enjoy
+                            exploring new technologies and developing
+                            projects that help me improve my technical
+                            and problem-solving skills.
+                        </p>
+
+                        <p>
+                            My goal is to continuously learn, gain
+                            practical experience and build a strong
+                            career in the technology field.
+                        </p>
+
+                    </div>
+
+                    <div class="about-box">
+
+                        <div>
+                            <span>Currently</span>
+                            <strong>Student</strong>
+                        </div>
+
+                        <div>
+                            <span>Focus</span>
+                            <strong>Technology</strong>
+                        </div>
+
+                        <div>
+                            <span>Location</span>
+                            <strong>India</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Education -->
+        <section id="education" class="section soft-section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>02</span>
+                    <div>
+                        <p>EDUCATION</p>
+                        <h2>My Education</h2>
+                    </div>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="education-card">
+
+                        <div class="year">
+                            2025 — Present
+                        </div>
+
+                        <div>
+                            <h3>Your Degree / Course</h3>
+                            <p>Your College Name</p>
+                            <small>City, India</small>
+                        </div>
+
+                    </div>
+
+                    <div class="education-card">
+
+                        <div class="year">
+                            2023 — 2025
+                        </div>
+
+                        <div>
+                            <h3>Higher Secondary Education</h3>
+                            <p>Your School Name</p>
+                            <small>City, India</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>03</span>
+                    <div>
+                        <p>SKILLS</p>
+                        <h2>What I Work With</h2>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">01</div>
+                        <h3>Programming</h3>
+                        <p>
+                            Python, C, Java
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">02</div>
+                        <h3>Web Development</h3>
+                        <p>
+                            HTML, CSS, JavaScript
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">03</div>
+                        <h3>Tools</h3>
+                        <p>
+                            Git, GitHub, VS Code
+                        </p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">04</div>
+                        <h3>Other Skills</h3>
+                        <p>
+                            Problem Solving, Communication
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="section soft-section">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <span>04</span>
+                    <div>
+                        <p>PROJECTS</p>
+                        <h2>Things I've Built</h2>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+                            <span>01</span>
+                            <span>WEB</span>
+                        </div>
+
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+                            A clean personal portfolio website created
+                            using HTML, CSS and JavaScript to showcase
+                            my skills, education and projects.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+                            <span>02</span>
+                            <span>WEB</span>
+                        </div>
+
+                        <h3>TimelessBHARAT</h3>
+
+                        <p>
+                            A travel and heritage website showcasing
+                            important cultural and historical places
+                            across Indian states.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-top">
+                            <span>03</span>
+                            <span>PROJECT</span>
+                        </div>
+
+                        <h3>Future Project</h3>
+
+                        <p>
+                            Add another academic or personal project
+                            here with a short description of what
+                            you built.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Technology</span>
+                            <span>Project</span>
+                        </div>
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Resume -->
+        <section class="resume-section">
+
+            <div class="container resume-container">
+
+                <div>
+                    <p class="resume-label">MY RESUME</p>
+                    <h2>Interested in knowing more?</h2>
+                    <p>
+                        Take a look at my resume for my complete
+                        academic and professional details.
+                    </p>
+                </div>
+
+                <a href="resume.pdf" target="_blank" class="button primary">
+                    View Resume →
                 </a>
 
-                <a href="resume.pdf" target="_blank" class="button">
-                    View Resume
-                </a>
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- About -->
-    <section id="about" class="section">
+        <!-- Contact -->
+        <section id="contact" class="section">
 
-        <div class="container">
+            <div class="container">
 
-            <div class="section-heading">
-                <p>ABOUT</p>
-                <h2>About Me</h2>
-            </div>
-
-            <div class="about-content">
-
-                <div class="about-text">
-                    <p>
-                        I am a student passionate about technology and
-                        software development. I enjoy learning new
-                        programming concepts and applying them through
-                        practical projects.
-                    </p>
-
-                    <p>
-                        I am continuously improving my technical skills
-                        and exploring new areas of computer science.
-                    </p>
+                <div class="section-title">
+                    <span>05</span>
+                    <div>
+                        <p>CONTACT</p>
+                        <h2>Let's Connect</h2>
+                    </div>
                 </div>
 
-            </div>
+                <div class="contact-grid">
 
-        </div>
+                    <div class="contact-text">
 
-    </section>
+                        <h3>Have a question or want to connect?</h3>
 
+                        <p>
+                            Feel free to reach out through any of
+                            the platforms below.
+                        </p>
 
-    <!-- Education -->
-    <section id="education" class="section light-section">
+                    </div>
 
-        <div class="container">
+                    <div class="contact-links">
 
-            <div class="section-heading">
-                <p>EDUCATION</p>
-                <h2>My Education</h2>
-            </div>
+                        <a href="mailto:yourmail@example.com">
+                            <span>Email</span>
+                            yourmail@example.com
+                        </a>
 
-            <div class="education-list">
+                        <a href="#" target="_blank">
+                            <span>GitHub</span>
+                            github.com/yourusername
+                        </a>
 
-                <div class="info-card">
-                    <span>2025 - Present</span>
-                    <h3>Your Degree / Course</h3>
-                    <p>Your College Name</p>
-                </div>
+                        <a href="#" target="_blank">
+                            <span>LinkedIn</span>
+                            linkedin.com/in/yourusername
+                        </a>
 
-                <div class="info-card">
-                    <span>2023 - 2025</span>
-                    <h3>Higher Secondary Education</h3>
-                    <p>Your School Name</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-
-        <div class="container">
-
-            <div class="section-heading">
-                <p>SKILLS</p>
-                <h2>Technical Skills</h2>
-            </div>
-
-            <div class="skills-grid">
-
-                <div class="skill">
-                    <h3>Programming</h3>
-                    <p>Python, C, Java</p>
-                </div>
-
-                <div class="skill">
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, JavaScript</p>
-                </div>
-
-                <div class="skill">
-                    <h3>Tools</h3>
-                    <p>Git, GitHub, VS Code</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects" class="section light-section">
-
-        <div class="container">
-
-            <div class="section-heading">
-                <p>PROJECTS</p>
-                <h2>My Projects</h2>
-            </div>
-
-            <div class="projects-grid">
-
-                <div class="project-card">
-
-                    <div class="project-number">01</div>
-
-                    <h3>Portfolio Website</h3>
-
-                    <p>
-                        A personal portfolio website created using
-                        HTML, CSS and JavaScript.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-
-                </div>
-
-
-                <div class="project-card">
-
-                    <div class="project-number">02</div>
-
-                    <h3>Project Name</h3>
-
-                    <p>
-                        Add a short description of your project,
-                        technologies used and its purpose.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
-
-                </div>
-
-
-                <div class="project-card">
-
-                    <div class="project-number">03</div>
-
-                    <h3>Project Name</h3>
-
-                    <p>
-                        Add another project that demonstrates
-                        your technical skills.
-                    </p>
-
-                    <a href="#" class="project-link">
-                        View Project →
-                    </a>
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
-
-
-    <!-- Resume -->
-    <section class="resume-section">
-
-        <div class="container resume-content">
-
-            <div>
-                <p>MY RESUME</p>
-                <h2>Want to know more?</h2>
-            </div>
-
-            <a href="resume.pdf" target="_blank" class="button primary">
-                View Resume
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-
-        <div class="container">
-
-            <div class="section-heading">
-                <p>CONTACT</p>
-                <h2>Get In Touch</h2>
-            </div>
-
-            <div class="contact-content">
-
-                <p>
-                    I'm always interested in learning, collaborating
-                    and working on new projects.
-                </p>
-
-                <div class="contact-links">
-                    <a href="mailto:yourmail@example.com">
-                        yourmail@example.com
-                    </a>
-
-                    <a href="#">
-                        GitHub
-                    </a>
-
-                    <a href="#">
-                        LinkedIn
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+    </main>
 
 
     <!-- Footer -->
     <footer>
 
-        <div class="container">
+        <div class="container footer-container">
 
             <p>© 2026 Your Name</p>
+
+            <p>Designed & Built with HTML, CSS & JavaScript</p>
 
         </div>
 
@@ -313,4 +460,3 @@
 </body>
 
 </html>
-```

@@ -1,4 +1,3 @@
-```javascript
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -16,9 +15,8 @@ window.addEventListener("scroll", () => {
     const nav = document.querySelector("nav");
 
     if (window.scrollY > 30) {
-        nav.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.05)";
+        nav.style.boxShadow = "0 4px 20px rgba(80, 100, 130, 0.08)";
     } else {
         nav.style.boxShadow = "none";
     }
 });
-```
